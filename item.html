@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Item</title>
+	<link rel="stylesheet" href="css/style.min.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:700&amp;subset=latin,cyrillic-ext">
+</head>
+<body class="inner-page">
+	<header class="main-header">
+		<div class="mid clearfix">
+			<nav class="main-navigation">
+				<ul>
+					<li>
+						<a href="index.html">Главная</a>
+					</li>
+					<li>
+						<a href="#">Информация</a>
+					</li>
+					<li>
+						<a href="#">Новости</a>
+					</li>
+					<li>
+						<a href="price.html">Прайс-лист</a>
+					</li>
+					<li class="active">
+						<a href="shop.html">Магазин</a>
+					</li>
+					<li>
+						<a href="#">Контакты</a>
+					</li>
+				</ul>
+			</nav>
+			<div class="user-block">
+				<a class="login icon-login" href="#">Вход</a>
+			</div>
+		</div>
+	</header>
+	<div class="main-container">
+		<div class="mid clearfix">
+			<div class="inner-page-title">
+				<h1>
+					Набор для путешествий "Baxter of California"
+				</h1>
+				<ul class="breadcrumbs">
+					<li><a href="index.html">Главная</a></li>
+					<li><a href="#">Магазин</a></li>
+					<li><a href="#">Средства для ухода</a></li>
+					<li class="current">Набор для путешествий "Baxter of California"</li>
+				</ul>
+			</div>
+			<section class="photo-gallery clearfix">
+				<div class="photo-normal">
+					<a href="#"><img src="img/item-photo-big.jpg" width="460" height="500" alt="photo"></a>
+				</div>
+				<div class="photo-min">
+					<a href="#"><img src="img/preview-min2.jpg" width="140" height="149" alt="photo"></a>
+					<a href="#"><img src="img/preview-min.jpg" width="140" height="149" alt="photo"></a>
+					<a href="#"><img src="img/item-photo-big.jpg" width="140" height="149" alt="photo"></a>
+				</div>
+			</section>
+			<div class="item-description clearfix">
+				<span>Есть в наличии</span>
+				<span class="item-articul clearfix">Articul:Dexter-ae</span>
+				<p>
+					Travel kit - необходимый аксессуар во время любого путешеставия. В аккуратной кожаной сумке находится всё, что нужно для бритья и ухода за кожей во время рабочей поездки или отдыха: средство для умывания, увлажняющий крем, крем для бритья, крем после бритья, шампунь. Набор также может стать отличным подарком.
+				</p>
+				<div class="product-price">
+					<div class="price">2 900 руб.</div>
+					<a href="#" class="btn-buy">Купить</a>
+				</div>		
+				<section class="item-kit">
+					<h2>В набор входят:</h2>
+					<ul>
+						<li>Средсто для умывания (50 мл)</li>
+						<li>Увлажняющий крем (50 мл)</li>
+						<li>Крем для бритья (50 мл)</li>
+						<li>Крем после бритья, шампунь (50 мл)</li>
+						<li>Удобная кожаная косметичка</li>
+					</ul>
+				</section>
+			</div>
+		</div>
+	</div>
+	<footer class="main-footer">
+		<div class="mid clearfix">
+			<section class="footer-contacts">
+				Барбершоп "Бородинский"<br>
+				Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
+				<a href="#">Как нас найти?</a><br>
+				телефон: +7 (495) 666-02-66
+			</section>
+			<section class="footer-social">
+				<p>Давайте дружить!</p>
+				<a href="#" class="social-btn icon-vkontakte"></a>
+				<a href="#" class="social-btn icon-facebook"></a>
+				<a href="#" class="social-btn icon-instagram"></a>
+			</section>
+			<section class="footer-copyright">
+				<p>Дизайн сайта:</p>
+				<a href="#" class="btn">htmlacademy.ru</a>
+			</section>
+		</div>
+	</footer>
+	<div class="modal-content">
+		<div class="icon-cancel" title="Закрыть"></div>
+		<h2 class="modal-content-title">Личный кабинет</h2>
+		<p>Введите пожалуйста свой логин и пароль.</p>
+		<form class="login-form" action="/echo" method="post">
+			<input type="text" class="icon-user" name="login" placeholder="Логин">
+			<input type="password" class="icon-lock-filled" name="password" placeholder="Пароль">
+			<input class="form__checkbox-input" type="checkbox" name="remember" id="remember-me">
+			<label class="form__checkbox" for="remember-me">Запомните меня</label>
+			<a href="#" class="restore">Я забыл пароль!</a>
+			<button type="submit" class="btn">Войти</button>
+		</form>
+	</div>
+	<script src="js/javascript.min.js"></script>
+</body>
+</html>

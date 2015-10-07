@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Shop</title>
+	<link rel="stylesheet" href="css/style.min.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:700&amp;subset=latin,cyrillic-ext">
+</head>
+<body class="inner-page">
+	<header class="main-header">
+		<div class="mid clearfix">
+			<nav class="main-navigation">
+				<ul>
+					<li>
+						<a href="index.html">Главная</a>
+					</li>
+					<li>
+						<a href="#">Информация</a>
+					</li>
+					<li>
+						<a href="#">Новости</a>
+					</li>
+					<li>
+						<a href="price.html">Прайс-лист</a>
+					</li>
+					<li class="active">
+						<a href="shop.html">Магазин</a>
+					</li>
+					<li>
+						<a href="#">Контакты</a>
+					</li>
+				</ul>
+			</nav>
+			<div class="user-block">
+				<a class="login icon-login" href="#">Вход</a>
+			</div>
+		</div>
+	</header>
+	<div class="mid clearfix">
+		<div class="inner-page-title">
+			<h1>Средства для ухода</h1>
+			<ul class="breadcrumbs">
+				<li><a href="index.html">Главная</a></li>
+				<li><a href="#">Магазин</a></li>
+				<li class="current">Средства для ухода</li>
+			</ul>	
+		</div>	
+		<aside class="filter">
+			<form action="/echo" method="post">
+				<div class="manufacture">
+					<div class="filter-title">Производители:</div>		
+					<input class="form__checkbox-input" checked id="baxter-of-california" type="checkbox" name="manufacture[]" value="baxter-of-california">
+					<label class="form__checkbox" for="baxter-of-california">Baxter of California</label>
+					<input class="form__checkbox-input" id="mr-natty" type="checkbox" name="manufacture[]" value="mr-natty">
+					<label class="form__checkbox" for="mr-natty">Mr Natty</label>
+					<input class="form__checkbox-input" id="suavecito" type="checkbox" name="manufacture[]" value="suavecito" checked>
+					<label class="form__checkbox" for="suavecito">Suavecito</label>
+					<input  class="form__checkbox-input" id="malin-goetz" type="checkbox" name="manufacture[]" value="malin-goetz">
+					<label class="form__checkbox" for="malin-goetz">Malin+Goetz</label>
+					<input class="form__checkbox-input" id="murrays" type="checkbox" name="manufacture[]" value="murrays" disabled>
+					<label class="form__checkbox" for="murrays">Murray's</label>
+					<input class="form__checkbox-input" id="american-crew" type="checkbox" name="manufacture[]" value="american-crew" checked>
+					<label class="form__checkbox" for="american-crew">American crew</label>
+				</div>
+				<div class="product">
+					<div class="filter-title">Группы товаров:</div>
+					<input class="form__radio-input" id="materials" type="radio" name="product" value="materials" checked>
+					<label for="materials" class="form__label-input">Бритвенные принадлежности</label>
+					<input class="form__radio-input" id="resources" type="radio" name="product" value="resources">
+					<label for="resources" class="form__label-input">Средства для ухода</label>
+					<input class="form__radio-input" id="accessories" type="radio" name="product" value="accessories">
+					<label for="accessories" class="form__label-input">Аксессуары</label>
+				</div>
+				<button type="submit" class="btn btn-filter">Показать</button>
+			</form>
+		</aside>
+		<div class="shop clearfix">
+			<article class="shop-product">
+				<a href="item.html">
+					<img src="img/catalog-photo-1.png" width="220" height="165" alt="#">
+				</a>
+				<div class="product-description-block">
+					<a class="product-desription" href="item.html">
+						<h1 class="category">Набор для путешествий</h1>
+						<span class="product-title">«Baxter of California»</span>
+					</a>
+					<div class="product-price catalog-price">
+						<div class="price">2 900 руб.</div>
+						<a href="#" class="btn-buy">Купить</a>
+					</div>
+				</div>
+			</article>
+			<article class="shop-product">
+				<a href="#">
+					<img src="img/catalog-photo-2.png" width="220" height="165" alt="#">
+				</a>
+				<div class="product-description-block">
+					<a class="product-desription" href="#">
+						<h1 class="category">Увлажняющий кондиционер</h1>
+						<span class="product-title">«Baxter of California»</span>
+					</a>				
+					<div class="product-price catalog-price">
+						<div class="price">750 руб.</div>
+						<a href="#" class="btn-buy">Купить</a>
+					</div>
+				</div>
+			</article>
+			<article class="shop-product">
+				<a href="#">
+					<img src="img/catalog-photo-3.png" width="220" height="165" alt="#">
+				</a>
+				<div class="product-description-block">
+					<a class="product-desription" href="#">
+						<h1 class="category">Гель для волос</h1>
+						<span class="product-title">«Sauvecito»</span>
+					</a>			
+					<div class="product-price catalog-price">
+						<div class="price">290 руб.</div>
+						<a href="#" class="btn-buy">Купить</a>
+					</div>
+				</div>
+			</article>
+			<article class="shop-product">
+				<a href="#">
+					<img src="img/catalog-photo-4.png" width="220" height="165" alt="#">
+				</a>
+				<div class="product-description-block">
+					<a class="product-desription" href="#">
+						<h1 class="category">Глина для укладки волос</h1>
+						<span class="product-title">«American Crew»</span>
+					</a>
+					<div class="product-price catalog-price">
+						<div class="price">500 руб.</div>
+						<a href="#" class="btn-buy">Купить</a>
+					</div>
+				</div>
+			</article>
+			<article class="shop-product">
+				<a href="#">
+					<img src="img/catalog-photo-5.png" width="220" height="165" alt="#">
+				</a>
+				<div class="product-description-block">
+					<a class="product-desription" href="#">
+						<h1 class="category">Гель для волос</h1>
+						<span class="product-title">«American Crew»</span>
+					</a>				
+					<div class="product-price catalog-price">
+						<div class="price">300 руб.</div>
+						<a href="#" class="btn-buy">Купить</a>
+					</div>
+				</div>
+			</article>
+			<article class="shop-product">
+				<a href="#">
+					<img src="img/catalog-photo-6.png" width="220" height="165" alt="#">
+				</a>
+				<div class="product-description-block">
+					<a class="product-desription" href="#">
+						<h1 class="category">Набор для бритья</h1>
+						<span class="product-title">«Baxter of California»</span>
+					</a>
+					<div class="product-price catalog-price">
+						<div class="price">3 900 руб.</div>
+						<a href="#" class="btn-buy">Купить</a>
+					</div>
+				</div>
+			</article>
+			<div class="pagenav">
+				<a href="#" class="btn pagenav-btn">1</a>
+				<span class="pagenav-btn current-btn">2</span>
+				<a href="#" class="btn pagenav-btn">3</a>
+				<a href="#" class="btn pagenav-btn">4</a>
+			</div>
+		</div>
+
+	</div>
+
+	<footer class="main-footer">
+		<div class="mid clearfix">
+			<section class="footer-contacts">
+				Барбершоп "Бородинский"<br>
+				Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
+				<a href="#">Как нас найти?</a><br>
+				телефон: +7 (495) 666-02-66
+			</section>
+			<section class="footer-social">
+				<p>Давайте дружить!</p>
+				<a href="#" class="social-btn icon-vkontakte"></a>
+				<a href="#" class="social-btn icon-facebook"></a>
+				<a href="#" class="social-btn icon-instagram"></a>
+			</section>
+			<section class="footer-copyright">
+				<p>Дизайн сайта:</p>
+				<a href="#" class="btn">htmlacademy.ru</a>
+			</section>
+		</div>
+	</footer>
+	<div class="modal-content">
+		<div class="icon-cancel" title="Закрыть"></div>
+		<h2 class="modal-content-title">Личный кабинет</h2>
+		<p>Введите пожалуйста свой логин и пароль.</p>
+		<form class="login-form" action="/echo" method="post">
+			<input type="text" class="icon-user" name="login" placeholder="Логин">
+			<input type="password" class="icon-lock-filled" name="password" placeholder="Пароль">
+			<input class="form__checkbox-input" type="checkbox" name="remember" id="remember-me">
+			<label class="form__checkbox" for="remember-me">Запомните меня</label>
+			<a href="#" class="restore">Я забыл пароль!</a>
+			<button type="submit" class="btn">Войти</button>
+		</form>
+	</div>
+	<script src="js/javascript.min.js"></script>
+</body>
+</html>
